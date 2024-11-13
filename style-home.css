@@ -1,0 +1,98 @@
+
+nav
+{
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+nav li
+{
+    display: inline;
+    margin: 0 0 0 10px;
+}
+.div1 img,
+.div4 img {
+    width: 100%;
+    height: auto;
+}
+
+
+.div2, .div3 {
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+nav a
+{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    vertical-align: top;
+}
+.tprincipal
+{
+    padding-left: 15px;
+}
+#banner
+{
+    width: 100%;
+}
+.principal
+{
+    background-color: #CCCCCC;
+    padding: 20px;
+}
+
+.centralizado
+{
+    text-align: center;background: #CCCCCC;
+}
+
+p
+{
+    text-align: center;
+    background: #CCCCCC;
+}
+
+em strong
+{
+    color:red;
+}
+#mision
+{
+    font-size:20px;
+}
+
+.diferenciales
+{
+    background-color: #FFFFFF;
+    padding: 30px;
+}
+h2
+{
+    text-align: center;
+}
+
+.items
+{
+    font-style: italic;
+}
+ul 
+{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+
+}
+
+
+
+.imagendif
+{
+    width: 50%;
+}
+

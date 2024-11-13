@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title> Contacto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="caja" >
+                <h1><img src="imagenes/logo-sup.png" alt="logo superior Óptica Xoloc"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" alt="Logo barberia Alura">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>         
+            </div>
+        </header>
+        <main>
+        <section class="container">
+            <div class="formulario">
+                <form>
+                    <label for="nombreapellido">
+                            Nombre y Apellido
+                    </label>
+                    <input type="text" id="nombreapellido" class="input-padron" required>
+
+                    <label for="correo">Correo Electronico</label>
+                <input type="email" id="correo" class="input-padron" required placeholder="email@dominio.com">
+
+
+                <label for="celular">
+                    Celular
+            </label>
+            <input type="tel" id="celular" class="input-padron" required placeholder="(+52) XXXX XXXXXX">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="70" rows="10" id="mensaje"></textarea>
+            <fieldset>
+                <legend>¿Cómo le gustaria que lo contactemos?</legend>
+                <label for="radio-email"><input type="radio" name="contacto" id="radio-email",value="email">Email</label>
+
+                <label for="radio-telefono">
+                    <input type="radio" name="contacto" id="radio-telofno",value="telefono">  
+                        Telefono
+                </label>
+
+                <label for="radio-whatsapp"><input type="radio" name="contacto" id="radio-whatsapp",value="whatsapp" checked>Whatsapp</label>
+
+            </fieldset>
+            <fieldset>
+                <legend>¿En cual horario prefiere ser etendido</legend>
+                <select>
+                    <option>Mañana</option>
+                    <option>Tarde</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" value="Enviar Formulario">¿Le gustaria recibir novedades de Óptica Xoloc?</label>
+
+            <input type="submit" value="Enviar Formulario" ,class="enviar">
+        </form>
+    </div>
+    <div class="Tabla_horarios">
+        <table>
+            <thead>
+                <tr>
+                <th>Día</th>
+                <th>Horario</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Lunes</td>
+                <td>10:00 hrs -- 18:30 hrs</td>
+            </tr>
+            <tr>
+                <td>Martes</td>
+                <td>14:00 hrs -- 18:30 hrs</td>
+            </tr>
+            <tr>
+                <td>Miercoles</td>
+                <td>10:00 hrs -- 18:30 hrs</td>
+            </tr>
+            <tr>
+                <td>Jueves</td>
+                <td>14:00 hrs -- 18:30 hrs</td>
+            </tr>
+            <tr>
+                <td>Viernes</td>
+                <td>10:00 hrs -- 18:30 hrs</td>
+            </tr>
+            <tr>
+                <td>Sabado</td>
+                <td>10:30 hrs -- 14:00 hrs</td>
+            </tr>
+        </table>
+    </div>
+        </section>
+        </main>
+        <footer>
+            <img src="imagenes/logo-sup.png" alt="Logo Óptica Xoloc">
+            <p class="copyright">&copy Copyright Óptica Xoloc - 2020</p>
+        </footer>
+    </body>
+
+
+</html>
