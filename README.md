@@ -32,3 +32,7 @@ Este proyecto es una página web creada para la Óptica Xoloc, ubicada en San Ma
    ```
 
 3. Abre `index.html` en tu navegador para visualizar la página de inicio en local o accede a la página desplegada en GitHub Pages [aquí](https://ianric32.github.io/primer_pagina/).
+# Licencia
+* Autor: Ian Ricardo
+* Licencia: MIT
+
