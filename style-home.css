@@ -1,98 +1,121 @@
-
-nav
-{
-    position: absolute;
-    top: 10px;
-    right: 0;
+/* Variables (Herencia y consistencia de diseño) */
+:root {
+    --main-bg-color: #CCCCCC;
+    --secondary-bg-color: #f9f9f9;
+    --text-color: black;
+    --highlight-color: red;
+    --font-main: 'Arial', sans-serif;
+    --padding-main: 20px;
 }
 
-nav li
-{
-    display: inline;
-    margin: 0 0 0 10px;
+/* Estilos globales */
+body {
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary-bg-color);
 }
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-main);
+    background-color: var(--main-bg-color);
+}
+
+header h1 img {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: var(--text-color);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Main Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: var(--padding-main);
+    background-color: var(--secondary-bg-color);
+}
+
 .div1 img,
 .div4 img {
     width: 100%;
     height: auto;
 }
 
-
 .div2, .div3 {
-    background-color: #f9f9f9;
-    padding: 10px;
+    padding: var(--padding-main);
+    background-color: var(--secondary-bg-color);
 }
 
-nav a
-{
-    text-transform: uppercase;
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
-    text-decoration: none;
-    vertical-align: top;
-}
-.tprincipal
-{
-    padding-left: 15px;
-}
-#banner
-{
-    width: 100%;
-}
-.principal
-{
-    background-color: #CCCCCC;
-    padding: 20px;
+ul {
+    padding: 0;
+    list-style: none;
 }
 
-.centralizado
-{
-    text-align: center;background: #CCCCCC;
-}
-
-p
-{
-    text-align: center;
-    background: #CCCCCC;
-}
-
-em strong
-{
-    color:red;
-}
-#mision
-{
-    font-size:20px;
-}
-
-.diferenciales
-{
-    background-color: #FFFFFF;
-    padding: 30px;
-}
-h2
-{
-    text-align: center;
-}
-
-.items
-{
+ul li {
+    margin-bottom: 10px;
     font-style: italic;
 }
-ul 
-{
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
 
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding-main);
+    background-color: var(--main-bg-color);
+    text-align: center;
 }
 
-
-
-.imagendif
-{
-    width: 50%;
+footer img {
+    width: 50px;
+    
 }
 
+footer p {
+    margin: 10px 0 0;
+    font-size: small;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
