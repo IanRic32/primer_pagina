@@ -1,0 +1,72 @@
+:root {
+    --main-bg-color: #CCCCCC;
+    --secondary-bg-color: #f9f9f9;
+    --text-color: black;
+    --highlight-color: red;
+    --font-main: 'Arial', sans-serif;
+    --padding-main: 20px;
+}
+body   {
+    background-color: var(--main-bg-color);
+}
+
+.caja  {
+    background-color: var(--main-bg-color);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    margin: 10px;
+}
+
+.imagen {
+    align-content: center;
+    margin: 10px;
+    justify-content: center;
+    border: 10px;
+}
+.navegador{
+    align-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+    margin: 10px;
+}
+
+.menu{
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--main-bg-color);
+}
+
+#item{
+    margin-left: 20px;
+    padding: 10px;
+}
+
+#elements{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--main-bg-color);
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.footer{
+    background-color: var(--main-bg-color);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 15px;
+    margin: 10px;
+}

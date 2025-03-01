@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caja de Comentarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <h1><img src="imagenes/logo-sup.png" alt="logo superior Óptica Xoloc"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="comentarios.html">Comentarios</a></li>
+                </ul>
+            </nav>         
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <h2>Deja tu comentario</h2>
+            <form id="comentarioForm">
+                <fieldset>
+                    <legend>¿Quieres hacer un comentario anónimo o público?</legend>
+                    <label>
+                        <input type="radio" name="tipoComentario" value="anonimo" checked> Anónimo
+                    </label>
+                    <label>
+                        <input type="radio" name="tipoComentario" value="publico"> Público
+                    </label>
+                </fieldset>
+
+                <div id="nombreClienteContainer" style="display: none;">
+                    <label for="nombreCliente">Nombre del cliente:</label>
+                    <input type="text" id="nombreCliente">
+                </div>
+
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" rows="4" cols="50" required></textarea>
+
+                <button type="submit">Agregar Comentario</button>
+            </form>
+
+            <div id="comentariosLista">
+                <!-- Aquí se mostrarán los comentarios -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="imagenes/logo-sup.png" alt="Logo Óptica Xoloc">
+        <p class="copyright">&copy; Copyright Óptica Xoloc - 2020</p>
+    </footer>
+
+    <script src="comentarios.js"></script>
+</body>
+</html>

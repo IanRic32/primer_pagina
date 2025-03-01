@@ -189,3 +189,102 @@ La etiqueta tfoot, representa el pie de página de la tabla.*/
 
 
 
+.comentario {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.comentario p {
+    margin: 0;
+}
+
+.comentario button {
+    margin-top: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.comentario button:hover {
+    background-color: #cc0000;
+}
+
+
+.comentario {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.comentario p {
+    margin: 0;
+}
+
+.comentario button {
+    margin-top: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.comentario button:hover {
+    background-color: #cc0000;
+}
+
+#nombreClienteContainer {
+    margin-bottom: 10px;
+}
+
+.comentario {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.comentario p {
+    margin: 0;
+}
+
+.comentario button {
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.comentario button.editar {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.comentario button.editar:hover {
+    background-color: #45a049;
+}
+
+.comentario button.eliminar {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.comentario button.eliminar:hover {
+    background-color: #cc0000;
+}
+
+#nombreClienteContainer {
+    margin-bottom: 10px;
+}
